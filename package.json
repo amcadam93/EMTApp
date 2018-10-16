@@ -2,7 +2,9 @@
   "name": "emtapp",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
   "dependencies": {
+    "bootstrap": "^4.1.1",
     "express": "^4.16.4",
     "mysql": "^2.16.0",
     "react": "^16.5.2",
