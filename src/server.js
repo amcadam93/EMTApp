@@ -16,16 +16,14 @@ console.log("Starting...");
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/ping', function (req, res) {
-    connection.connect();
     connection.query('SELECT * FROM person', function (error, results, fields) {
         if (error) throw error;
         res.send(results)
     });
-    connection.end();
 });
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.send(" Hello from server! ");
 });
 
 app.listen(process.env.PORT || 8080);
