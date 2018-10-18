@@ -15,15 +15,17 @@ console.log("Starting...");
 
 app.use(express.static(path.join(__dirname, 'build')));
 
+app.get('/index', function (req, res) {
+    res.send({express: 'Hello from server.'});
+    console.log("Serving request for index.");
+});
+
 app.get('/ping', function (req, res) {
     connection.query('SELECT * FROM person', function (error, results, fields) {
         if (error) throw error;
-        res.send(results)
+        res.send({response:results})
     });
-});
-
-app.get('/', function (req, res) {
-    res.send(" Hello from server! ");
+    console.log("Serving request for /ping.");
 });
 
 app.listen(process.env.PORT || 8080);

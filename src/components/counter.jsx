@@ -3,13 +3,36 @@ import React, {Component} from 'react';
 class Counter extends Component {
 
     state = {
-        count: 0
+        count: 0,
+        response: '',
+        index: ''
     };
 
-    // constructor() {
-    //     super();
-    //     this.handleIncrement = this.handleIncrement.bind(this);
-    // }
+    componentDidMount() {
+        this.callDatabase()
+            .then(res => this.setState({ response: res.response }))
+            .catch(err => console.log(err));
+
+        this.callIndex()
+            .then(res => this.setState({ index: res.express }))
+            .catch(err => console.log(err));
+    }
+
+    callDatabase = async() => {
+        const response = await fetch('/ping');
+        const body = await response.json();
+
+        if (response.status !== 200) throw Error(body.message);
+        return body;
+    };
+
+    callIndex = async() => {
+        const response = await fetch('/index');
+        const body = await response.json();
+
+        if (response.status !== 200) throw Error(body.message);
+        return body;
+    };
 
     handleIncrement = () => {
         this.setState({count: this.state.count + 1})
@@ -18,10 +41,13 @@ class Counter extends Component {
 
     render(){
         return(
-        <React.Fragment>
-            <span className={this.getBadgeClasses()}> {this.formatCount()} </span>
-            <button onClick={this.handleIncrement} className={"btn btn-secondary btn-sm"}>Increment</button>
-        </React.Fragment>
+            <div className="App">
+                <span className={this.getBadgeClasses()}> {this.formatCount()} </span>
+                <button onClick={this.handleIncrement} className={"btn btn-secondary btn-sm"}>Increment</button>
+                <p>This is where index response goes: {this.state.index}</p>
+                <p>This is where DB response goes: </p>
+                <ul>{this.state.response.map}</ul>
+            </div>
         );
     }
 
