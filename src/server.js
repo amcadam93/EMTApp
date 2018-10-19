@@ -11,13 +11,16 @@ const connection = mysql.createConnection({
     database: 'test'
 });
 
+let countMe = 0;
+
 console.log("Starting...");
 
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/index', function (req, res) {
     res.send({express: 'Hello from server.'});
-    console.log("Serving request for index.");
+    countMe++;
+    console.log("Serving request for index. "+countMe);
 });
 
 app.get('/users', function (req, res) {
@@ -25,7 +28,8 @@ app.get('/users', function (req, res) {
         if (error) throw error;
         res.send({users:results})
     });
-    console.log("Serving request for users.");
+    countMe++;
+    console.log("Serving request for users. " + countMe);
 });
 
 app.listen(process.env.PORT || 8080);
