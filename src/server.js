@@ -20,12 +20,12 @@ app.get('/index', function (req, res) {
     console.log("Serving request for index.");
 });
 
-app.get('/ping', function (req, res) {
+app.get('/users', function (req, res) {
     connection.query('SELECT * FROM person', function (error, results, fields) {
         if (error) throw error;
-        res.send({response:results})
+        res.send({users:results})
     });
-    console.log("Serving request for /ping.");
+    console.log("Serving request for users.");
 });
 
 app.listen(process.env.PORT || 8080);
