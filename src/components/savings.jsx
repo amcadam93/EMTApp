@@ -9,14 +9,11 @@ class Savings extends Component {
     };
 
     componentDidMount() {
-
         this.callDatabase()
             .then(res => this.setState({ users: res.users.map(
                 member =>
-                <ul key={member.age}>
-                    <li>Member Name: {member.fName} {member.lName}, {member.age} years old.</li>
-                    </ul>)
-            }))
+                    <ul>{member.fName}</ul>
+                )}))
             .catch(err => console.log(err));
 
         this.callIndex()
@@ -45,6 +42,15 @@ class Savings extends Component {
         console.log('Increment Clicked.', this);
     };
 
+    modOut = () => {
+        this.callDatabase()
+            .then(res => this.setState({ users: res.users.map(
+                    member =>
+                        <ul>{member.fName.concat(' ' + member.lName)}</ul>
+                )}))
+            .catch(err => console.log(err));
+    };
+
     render(){
         return(
             <div className="App">
@@ -52,6 +58,7 @@ class Savings extends Component {
                 <button onClick={this.handleIncrement} className={"btn btn-secondary btn-sm m-2"}>Increment</button>
                 <button onClick={this.callIndex} className={"btn btn-secondary btn-sm m-2"}> Say Hello! </button>
                 <button onClick={this.callDatabase} className={"btn btn-secondary btn-sm m-2"}> Say Database! </button>
+                <button onClick={this.modOut} className={"btn btn-secondary btn-sm m-2"}> Add last name! </button>
                 <p>This is where index response goes: {this.state.index}</p>
                 <p>This is where DB response goes: </p>
                 {this.state.users}
