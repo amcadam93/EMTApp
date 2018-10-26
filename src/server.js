@@ -32,4 +32,13 @@ app.get('/users', function (req, res) {
     console.log("Serving request for users. " + countMe);
 });
 
+app.get('/machine', function(req, res){
+    connection.query('SELECT * FROM machine WHERE machineID=1234', function(error, results, fields){
+        if(error) throw error;
+        res.send({machine:results})
+    });
+    countMe++;
+    console.log('Serving request for machine. ' + countMe);
+});
+
 app.listen(process.env.PORT || 8080);
