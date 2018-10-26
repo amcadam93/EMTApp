@@ -81,12 +81,23 @@ class Savings extends Component {
 
     render(){
         return(
-            <div className="Savings">
-                <button onClick={this.modOut} className={"btn btn-secondary btn-sm m-2"}> Add last name! </button>
-                <button onClick={this.calcKWh} className={"btn btn-secondary btn-sm m-2"}> Machine Information </button>
-                <p>This is where DB response goes: </p>
-                {this.state.users}
-                {this.state.machine}
+            <div className="container-fluid bg-dark">
+                <div className="navbar navbar-expand-md bg-dark justify-content-center">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <button type="button" onClick={this.modOut} className={"btn btn-primary"}> Add last Name </button>
+                        </li>
+                        <li className="nav-item">
+                            <button type="button" onClick={this.calcKWh} className={"btn btn-primary"}> Machine Information </button>
+                        </li>
+                    </ul>
+                </div>
+                <div className="row text-primary justify-content-center d-flex">
+                    <div className="col-md-8 text-center">{this.state.users}</div>
+                </div>
+                <div className="row text-danger justify-content-center d-flex">
+                    <div className="col-md-8 text-center">{this.state.machine}</div>
+                </div>
             </div>
         );
     }
