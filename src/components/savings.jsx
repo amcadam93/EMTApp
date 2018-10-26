@@ -53,14 +53,13 @@ class Savings extends Component {
         return body;
     };
 
-    calckWh = () => {
+    calcKWh = () => {
         var kwh, dollarAmnt, savings;
 
         this.callMachineData()
             .then(res => this.setState({ machine: res.machine.map(
                 machine =>
                     <ul>
-
                         <ul>The kWH for {machine.amps} amps * {machine.volts} volts * {machine.hours} hours is: {'\n'}
                             {kwh = (machine.amps * machine.volts * machine.hours).toFixed(2)} kWh</ul>
                         <ul>Which, at the average price of {machine.price_per_kwh} cents, costs:
@@ -84,7 +83,7 @@ class Savings extends Component {
         return(
             <div className="Savings">
                 <button onClick={this.modOut} className={"btn btn-secondary btn-sm m-2"}> Add last name! </button>
-                <button onClick={this.calckWh} className={"btn btn-secondary btn-sm m-2"}> Machine Information </button>
+                <button onClick={this.calcKWh} className={"btn btn-secondary btn-sm m-2"}> Machine Information </button>
                 <p>This is where DB response goes: </p>
                 {this.state.users}
                 {this.state.machine}

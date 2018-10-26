@@ -4,9 +4,6 @@
     <list default="true" id="4607f7c4-f7ad-4174-93a6-8f67219ba52a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/savings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/savings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,6 +28,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
+          <entry key="gitignore" value="1" />
           <entry key="js" value="9" />
           <entry key="json" value="1" />
           <entry key="jsx" value="2" />
@@ -43,6 +41,7 @@
           <entry key="JSON" value="1" />
           <entry key="JSX Harmony" value="2" />
           <entry key="JavaScript" value="9" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
@@ -56,7 +55,7 @@
           <entry key="css" value="46" />
           <entry key="js" value="1034" />
           <entry key="jsx" value="6838" />
-          <entry key="txt" value="315" />
+          <entry key="txt" value="488" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -64,7 +63,7 @@
           <entry key="CSS" value="46" />
           <entry key="JSX Harmony" value="6838" />
           <entry key="JavaScript" value="1034" />
-          <entry key="PLAIN_TEXT" value="315" />
+          <entry key="PLAIN_TEXT" value="488" />
         </counts>
       </usages-collector>
     </session>
@@ -131,8 +130,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/savings.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="68" column="67" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
+            <state relative-caret-position="230">
+              <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -149,6 +148,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="amcadam93 &lt;amcadam@uccs.edu&gt;" />
         <option value="amcadam &lt;amcadam@uccs.edu&gt;" />
         <option value="amcadam" />
       </list>
@@ -287,11 +287,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539969600859</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CREATE TABLE machine ( machineID VARCHAR(10), amps FLOAT(6,2), volts FLOAT(6,2), hours FLOAT(6,2), price_per_kwh FLOAT(6,2));&#10;&#10;Use this command to create the new table within the mysql database this code refers to.&#10;&#10;Does all the operations on the client side of things currently.">
+      <created>1540577421699</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540577421700</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39961000" />
+    <option name="totallyTimeSpent" value="40630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,7 +345,8 @@
     <MESSAGE value="Created a server.js file that holds the express connections to the database. Establishes a connection and is capable of pulling data from it.&#10;&#10;BREAKS WHEN THE PAGE IS REFRESHED! I have no idea how to fix this or how to connect it to the react app itself." />
     <MESSAGE value="Got the front end connected to the backend. Still running into issues where the front end cannot render database entries properly, but works with plaintext just fine." />
     <MESSAGE value="Front end talks coherently with the database! THIS IS REALLY COOL!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front end talks coherently with the database! THIS IS REALLY COOL!" />
+    <MESSAGE value="CREATE TABLE machine ( machineID VARCHAR(10), amps FLOAT(6,2), volts FLOAT(6,2), hours FLOAT(6,2), price_per_kwh FLOAT(6,2));&#10;&#10;Use this command to create the new table within the mysql database this code refers to.&#10;&#10;Does all the operations on the client side of things currently." />
+    <option name="LAST_COMMIT_MESSAGE" value="CREATE TABLE machine ( machineID VARCHAR(10), amps FLOAT(6,2), volts FLOAT(6,2), hours FLOAT(6,2), price_per_kwh FLOAT(6,2));&#10;&#10;Use this command to create the new table within the mysql database this code refers to.&#10;&#10;Does all the operations on the client side of things currently." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -407,10 +415,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/savings.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="68" column="67" selection-start-line="68" selection-start-column="67" selection-end-line="68" selection-end-column="67" />
+        <state relative-caret-position="230">
+          <caret line="61" column="24" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
         </state>
       </provider>
     </entry>

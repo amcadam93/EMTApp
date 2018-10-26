@@ -33,7 +33,7 @@ app.get('/users', function (req, res) {
 });
 
 app.get('/machine', function(req, res){
-    connection.query('SELECT * FROM machine WHERE machineID=1234', function(error, results, fields){
+    connection.query('SELECT * FROM machine', function(error, results, fields){
         if(error) throw error;
         res.send({machine:results})
     });
