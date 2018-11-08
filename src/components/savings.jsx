@@ -1,4 +1,10 @@
 import React, {Component} from 'react';
+import {
+    VictoryBar,
+    VictoryChart,
+    VictoryLine,
+    VictoryPie,
+} from "victory";
 
 class Savings extends Component {
 
@@ -82,13 +88,13 @@ class Savings extends Component {
     render(){
         return(
             <div className="container-fluid bg-dark">
-                <div className="navbar navbar-expand-md bg-dark justify-content-center">
+                <div className="navbar navbar-expand-sm flex-column">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <button type="button" onClick={this.modOut} className={"btn btn-primary"}> Add last Name </button>
+                            <button type="button" onClick={this.modOut} className={"btn btn-primary border"}> Add last Name </button>
                         </li>
                         <li className="nav-item">
-                            <button type="button" onClick={this.calcKWh} className={"btn btn-primary"}> Machine Information </button>
+                            <button type="button" onClick={this.calcKWh} className={"btn btn-primary border"}> Machine Information </button>
                         </li>
                     </ul>
                 </div>
@@ -97,6 +103,17 @@ class Savings extends Component {
                 </div>
                 <div className="row text-danger justify-content-center d-flex">
                     <div className="col-md-8 text-center">{this.state.machine}</div>
+                </div>
+                <div>
+                    <VictoryChart>
+                        <VictoryBar/>
+                    </VictoryChart>
+                    <VictoryChart>
+                        <VictoryLine/>
+                    </VictoryChart>
+                    <VictoryChart>
+                        <VictoryPie/>
+                    </VictoryChart>
                 </div>
             </div>
         );
