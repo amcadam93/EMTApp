@@ -11,7 +11,9 @@ class Savings extends Component {
     state = {
         users: '',
         index: '',
-        machine:''
+        machine:'',
+        userKwh:'',
+        userSavings:''
     };
 
     componentDidMount() {
@@ -85,6 +87,26 @@ class Savings extends Component {
             .catch(err => console.log(err));
     };
 
+    handleChange = (event) => {
+        this.setState({userKwh: event.target.value})
+    }
+
+    handleSubmit = (event) => {
+        var dollarAmnt, savings;
+
+        this.callMachineData()
+            .then(res => this.setState({ machine: res.machine.map(
+                    machine =>
+                        <ul>
+                            <ul>Average price of {machine.price_per_kwh} cents, costs:
+                                ${dollarAmnt = ((this.state.userKwh * machine.price_per_kwh)/60).toFixed(2)}</ul>
+                            <ul>where a 20% reduction in power results in: {'\n'}
+                                ${savings = (dollarAmnt*.2).toFixed(2)} saved.</ul>
+                        </ul>
+                )}));
+        event.preventDefault();
+    };
+
     render(){
         return(
             <div className="container-fluid bg-dark">
@@ -103,6 +125,15 @@ class Savings extends Component {
                 </div>
                 <div className="row text-danger justify-content-center d-flex">
                     <div className="col-md-8 text-center">{this.state.machine}</div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <form onSubmit={this.handleSubmit}>
+                        <label>
+                            <input type="userKwh" class="form-control" placeholder="kwh"
+                                   value={this.state.userKwh} id="kwh" onChange={this.handleChange}/>
+                        </label>
+                        <button class="btn btn-primary" type="submit"> Submit </button>
+                    </form>
                 </div>
                 <div>
                     <VictoryChart>
