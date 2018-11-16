@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4607f7c4-f7ad-4174-93a6-8f67219ba52a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -140,18 +141,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="development" value="22" />
-          <entry key="js" value="4" />
+          <entry key="js" value="88" />
           <entry key="json" value="12" />
           <entry key="jsx" value="1406" />
-          <entry key="txt" value="842" />
+          <entry key="txt" value="989" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="12" />
           <entry key="JSX Harmony" value="1406" />
-          <entry key="JavaScript" value="4" />
-          <entry key="PLAIN_TEXT" value="864" />
+          <entry key="JavaScript" value="88" />
+          <entry key="PLAIN_TEXT" value="1011" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -170,11 +171,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-122">
-              <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="430">
+              <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -183,7 +184,7 @@
         <entry file="file://$PROJECT_DIR$/.env.development">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-column="20" />
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -212,7 +213,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
@@ -262,8 +263,8 @@
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/savings.jsx" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/server.js" />
         <option value="$PROJECT_DIR$/.env.development" />
+        <option value="$PROJECT_DIR$/src/server.js" />
       </list>
     </option>
   </component>
@@ -357,7 +358,7 @@
       <workItem from="1541782230299" duration="2354000" />
       <workItem from="1542299221807" duration="6438000" />
       <workItem from="1542384945055" duration="35000" />
-      <workItem from="1542385073652" duration="2227000" />
+      <workItem from="1542385073652" duration="2646000" />
     </task>
     <task id="LOCAL-00001" summary="Created a server.js file that holds the express connections to the database. Establishes a connection and is capable of pulling data from it.&#10;&#10;BREAKS WHEN THE PAGE IS REFRESHED! I have no idea how to fix this or how to connect it to the react app itself.">
       <created>1539722456954</created>
@@ -422,11 +423,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542386420070</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Heroku testing: Changed the port the server runs on from hardcoded 8000 to instead listen for whatever port heroku assigns it">
+      <created>1542387552152</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542387552152</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63677000" />
+    <option name="totallyTimeSpent" value="64096000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -439,6 +447,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1292" height="1068" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25491738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -505,7 +514,8 @@
     <MESSAGE value="Added form functionality that allows users to add their kwh and see the resulting savings above their input. Graphs are also included, but currently only hold default data.&#10;&#10;Goal for the graphs is to plot data from a database of average costs of HVAC based on area code, and plotting them against the estimated savings of using Coldplus, right at the fingertips of the consumers." />
     <MESSAGE value="Testing heroku integration. Changed the port the server uses from 8080 to 8000, as well as the port the app proxys to 8000.&#10;&#10;src/server.js and package.json are where these changes occurred respectively." />
     <MESSAGE value="Heroku testing:added .env.development to root with 'HOST=name.heroku.app' to it to try and combat 'Invalid host error'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Heroku testing:added .env.development to root with 'HOST=name.heroku.app' to it to try and combat 'Invalid host error'" />
+    <MESSAGE value="Heroku testing: Changed the port the server runs on from hardcoded 8000 to instead listen for whatever port heroku assigns it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Heroku testing: Changed the port the server runs on from hardcoded 8000 to instead listen for whatever port heroku assigns it" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -546,27 +556,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/server.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-122">
-          <caret line="19" column="38" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.development">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/savings.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1286">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="92">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -580,10 +573,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/components/savings.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="-1286">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.development">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="43" column="37" lean-forward="true" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
         </state>
       </provider>
     </entry>
