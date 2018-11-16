@@ -41,4 +41,10 @@ app.get('/machine', function(req, res){
     console.log('Serving request for machine. ' + countMe);
 });
 
-app.listen(process.env.PORT || 8000);
+// For local testing, ucomment this
+// app.listen(process.env.PORT || 8000);
+
+//For heroku deployment, uncomement this
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
