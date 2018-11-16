@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4607f7c4-f7ad-4174-93a6-8f67219ba52a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/savings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/savings.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -142,10 +140,11 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="development" value="20" />
           <entry key="js" value="4" />
           <entry key="json" value="12" />
           <entry key="jsx" value="1406" />
-          <entry key="txt" value="424" />
+          <entry key="txt" value="687" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -153,28 +152,39 @@
           <entry key="JSON" value="12" />
           <entry key="JSX Harmony" value="1406" />
           <entry key="JavaScript" value="4" />
-          <entry key="PLAIN_TEXT" value="424" />
+          <entry key="PLAIN_TEXT" value="707" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="development" value="1" />
           <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="897">
-              <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+              <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env.development">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -183,7 +193,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/savings.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1286">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -234,8 +244,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="amcadam &lt;amcadam@uccs.edu&gt;" />
         <option value="amcadam93 &lt;amcadam@uccs.edu&gt;" />
+        <option value="amcadam &lt;amcadam@uccs.edu&gt;" />
         <option value="amcadam" />
       </list>
     </option>
@@ -254,6 +264,7 @@
         <option value="$PROJECT_DIR$/src/components/savings.jsx" />
         <option value="$PROJECT_DIR$/src/server.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.env.development" />
       </list>
     </option>
   </component>
@@ -291,22 +302,6 @@
             <path>
               <item name="emtapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="emtapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emtapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emtapp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emtapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emtapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="emtapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="emtapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,7 +358,7 @@
       <workItem from="1541782230299" duration="2354000" />
       <workItem from="1542299221807" duration="6438000" />
       <workItem from="1542384945055" duration="35000" />
-      <workItem from="1542385073652" duration="875000" />
+      <workItem from="1542385073652" duration="1254000" />
     </task>
     <task id="LOCAL-00001" summary="Created a server.js file that holds the express connections to the database. Establishes a connection and is capable of pulling data from it.&#10;&#10;BREAKS WHEN THE PAGE IS REFRESHED! I have no idea how to fix this or how to connect it to the react app itself.">
       <created>1539722456954</created>
@@ -414,11 +409,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542303601048</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Testing heroku integration. Changed the port the server uses from 8080 to 8000, as well as the port the app proxys to 8000.&#10;&#10;src/server.js and package.json are where these changes occurred respectively.">
+      <created>1542386047257</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1542386047257</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62325000" />
+    <option name="totallyTimeSpent" value="62704000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,8 +433,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1292" height="1068" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25491738" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25491738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -445,7 +448,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4994726" weight="0.3312034" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4994726" visible="true" weight="0.3258786" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4994726" visible="true" weight="0.3258786" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052744" side_tool="true" weight="0.32619646" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
@@ -495,7 +498,8 @@
     <MESSAGE value="Quick update to server to select everything from the machine table and apply the formatting instead of just the first thing with id '1234'" />
     <MESSAGE value="Added CSS to make it a little better." />
     <MESSAGE value="Added form functionality that allows users to add their kwh and see the resulting savings above their input. Graphs are also included, but currently only hold default data.&#10;&#10;Goal for the graphs is to plot data from a database of average costs of HVAC based on area code, and plotting them against the estimated savings of using Coldplus, right at the fingertips of the consumers." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added form functionality that allows users to add their kwh and see the resulting savings above their input. Graphs are also included, but currently only hold default data.&#10;&#10;Goal for the graphs is to plot data from a database of average costs of HVAC based on area code, and plotting them against the estimated savings of using Coldplus, right at the fingertips of the consumers." />
+    <MESSAGE value="Testing heroku integration. Changed the port the server uses from 8080 to 8000, as well as the port the app proxys to 8000.&#10;&#10;src/server.js and package.json are where these changes occurred respectively." />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing heroku integration. Changed the port the server uses from 8080 to 8000, as well as the port the app proxys to 8000.&#10;&#10;src/server.js and package.json are where these changes occurred respectively." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -556,7 +560,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/savings.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1286">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -566,7 +570,14 @@
     <entry file="file://$PROJECT_DIR$/src/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="897">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.development">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
