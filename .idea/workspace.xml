@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4607f7c4-f7ad-4174-93a6-8f67219ba52a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/savings.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/savings.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
     </list>
@@ -126,45 +127,63 @@
     <session id="-1233028480">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="2" />
+          <entry key="ESLintLanguageService" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="jsx" value="1337" />
+          <entry key="js" value="4" />
+          <entry key="json" value="12" />
+          <entry key="jsx" value="1406" />
+          <entry key="txt" value="424" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSX Harmony" value="1337" />
+          <entry key="JSON" value="12" />
+          <entry key="JSX Harmony" value="1406" />
+          <entry key="JavaScript" value="4" />
+          <entry key="PLAIN_TEXT" value="424" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="json" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="897">
+              <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/savings.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1587">
-              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            <state relative-caret-position="-1286">
+              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -185,10 +204,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            <state relative-caret-position="391">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -206,25 +234,26 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="amcadam93 &lt;amcadam@uccs.edu&gt;" />
         <option value="amcadam &lt;amcadam@uccs.edu&gt;" />
+        <option value="amcadam93 &lt;amcadam@uccs.edu&gt;" />
         <option value="amcadam" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/components/counter.jsx" />
         <option value="$PROJECT_DIR$/src/components/equations.jsx" />
         <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/src/components/charts.jsx" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/server.js" />
         <option value="$PROJECT_DIR$/src/components/savings.jsx" />
+        <option value="$PROJECT_DIR$/src/server.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -332,7 +361,9 @@
       <workItem from="1541184951880" duration="998000" />
       <workItem from="1541700378998" duration="2583000" />
       <workItem from="1541782230299" duration="2354000" />
-      <workItem from="1542299221807" duration="4245000" />
+      <workItem from="1542299221807" duration="6438000" />
+      <workItem from="1542384945055" duration="35000" />
+      <workItem from="1542385073652" duration="875000" />
     </task>
     <task id="LOCAL-00001" summary="Created a server.js file that holds the express connections to the database. Establishes a connection and is capable of pulling data from it.&#10;&#10;BREAKS WHEN THE PAGE IS REFRESHED! I have no idea how to fix this or how to connect it to the react app itself.">
       <created>1539722456954</created>
@@ -376,11 +407,18 @@
       <option name="project" value="LOCAL" />
       <updated>1540588025566</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added form functionality that allows users to add their kwh and see the resulting savings above their input. Graphs are also included, but currently only hold default data.&#10;&#10;Goal for the graphs is to plot data from a database of average costs of HVAC based on area code, and plotting them against the estimated savings of using Coldplus, right at the fingertips of the consumers.">
+      <created>1542303601048</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1542303601048</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59222000" />
+    <option name="totallyTimeSpent" value="62325000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,7 +432,7 @@
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1292" height="1068" extended-state="4" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25491738" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25491738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -406,8 +444,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4994726" visible="true" weight="0.3312034" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4994726" weight="0.3258786" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4994726" weight="0.3312034" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.4994726" visible="true" weight="0.3258786" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50052744" side_tool="true" weight="0.32619646" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="TypeScript" order="12" />
@@ -456,7 +494,8 @@
     <MESSAGE value="CREATE TABLE machine ( machineID VARCHAR(10), amps FLOAT(6,2), volts FLOAT(6,2), hours FLOAT(6,2), price_per_kwh FLOAT(6,2));&#10;&#10;Use this command to create the new table within the mysql database this code refers to.&#10;&#10;Does all the operations on the client side of things currently." />
     <MESSAGE value="Quick update to server to select everything from the machine table and apply the formatting instead of just the first thing with id '1234'" />
     <MESSAGE value="Added CSS to make it a little better." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CSS to make it a little better." />
+    <MESSAGE value="Added form functionality that allows users to add their kwh and see the resulting savings above their input. Graphs are also included, but currently only hold default data.&#10;&#10;Goal for the graphs is to plot data from a database of average costs of HVAC based on area code, and plotting them against the estimated savings of using Coldplus, right at the fingertips of the consumers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added form functionality that allows users to add their kwh and see the resulting savings above their input. Graphs are also included, but currently only hold default data.&#10;&#10;Goal for the graphs is to plot data from a database of average costs of HVAC based on area code, and plotting them against the estimated savings of using Coldplus, right at the fingertips of the consumers." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
@@ -464,13 +503,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -497,10 +529,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.ts" />
     <entry file="file://$PROJECT_DIR$/src/components/charts.jsx" />
-    <entry file="file://$PROJECT_DIR$/src/server.js">
+    <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state relative-caret-position="391">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -514,20 +546,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.css">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        <state relative-caret-position="92">
+          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/savings.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1587">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        <state relative-caret-position="-1286">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
         </state>
       </provider>
     </entry>

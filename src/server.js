@@ -41,4 +41,4 @@ app.get('/machine', function(req, res){
     console.log('Serving request for machine. ' + countMe);
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8000);

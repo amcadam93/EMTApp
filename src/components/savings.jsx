@@ -62,7 +62,7 @@ class Savings extends Component {
     };
 
     calcKWh = () => {
-        var kwh, dollarAmnt, savings;
+        var kwh, dollarAmnt;
 
         this.callMachineData()
             .then(res => this.setState({ machine: res.machine.map(
@@ -73,7 +73,7 @@ class Savings extends Component {
                         <ul>Which, at the average price of {machine.price_per_kwh} cents, costs:
                             ${dollarAmnt = ((kwh * machine.price_per_kwh)/60).toFixed(2)}</ul>
                         <ul>where a 20% reduction in power results in: {'\n'}
-                            ${savings = (dollarAmnt*.2).toFixed(2)} saved.</ul>
+                            ${(dollarAmnt*.2).toFixed(2)} saved.</ul>
                     </ul>
                 )}))
     };
@@ -92,7 +92,7 @@ class Savings extends Component {
     }
 
     handleSubmit = (event) => {
-        var dollarAmnt, savings;
+        var dollarAmnt;
 
         this.callMachineData()
             .then(res => this.setState({ machine: res.machine.map(
@@ -101,7 +101,7 @@ class Savings extends Component {
                             <ul>Average price of {machine.price_per_kwh} cents, costs:
                                 ${dollarAmnt = ((this.state.userKwh * machine.price_per_kwh)/60).toFixed(2)}</ul>
                             <ul>where a 20% reduction in power results in: {'\n'}
-                                ${savings = (dollarAmnt*.2).toFixed(2)} saved.</ul>
+                                ${(dollarAmnt*.2).toFixed(2)} saved.</ul>
                         </ul>
                 )}));
         event.preventDefault();
@@ -113,14 +113,14 @@ class Savings extends Component {
                 <div className="navbar navbar-expand-sm flex-column">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <button type="button" onClick={this.modOut} className={"btn btn-primary border"}> Add last Name </button>
+                            <button type="button" onClick={this.modOut} class="btn btn-outline-info"> Add last Name </button>
                         </li>
                         <li className="nav-item">
-                            <button type="button" onClick={this.calcKWh} className={"btn btn-primary border"}> Machine Information </button>
+                            <button type="button" onClick={this.calcKWh} class="btn btn-outline-info"> Machine Information </button>
                         </li>
                     </ul>
                 </div>
-                <div className="row text-primary justify-content-center d-flex">
+                <div className="row text-info d-flex justify-content-center">
                     <div className="col-md-8 text-center">{this.state.users}</div>
                 </div>
                 <div className="row text-danger justify-content-center d-flex">
@@ -132,7 +132,7 @@ class Savings extends Component {
                             <input type="userKwh" class="form-control" placeholder="kwh"
                                    value={this.state.userKwh} id="kwh" onChange={this.handleChange}/>
                         </label>
-                        <button class="btn btn-primary" type="submit"> Submit </button>
+                        <button class="btn btn-outline-info" type="submit"> Submit </button>
                     </form>
                 </div>
                 <div>
